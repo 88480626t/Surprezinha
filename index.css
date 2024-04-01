@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /* Cor de fundo para simular o espaço */
+  }
+  
+  .moon {
+    width: 100px;
+    height: 100px;
+    background-color: #e0d2aa; /* Cor da lua */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moon-orbit 10s linear infinite; /* Define a animação de órbita */
+  }
+  
+  @keyframes moon-orbit {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg); /* Posição inicial */
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg); /* Posição final */
+    }
+  }
+  h1{color: rgb(224, 62, 56);}
+  p{color: aliceblue;}
+  
